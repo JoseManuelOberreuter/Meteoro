@@ -129,6 +129,15 @@
       </div>
     </section>
 
+    <!-- Green Marquee Section -->
+    <section class="marquee-section green-marquee">
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <div class="marquee-item">DESCUBRE • INNOVA • TRANSFORMA • IMPACTA • EVOLUCIONA</div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contacto" class="contact-section">
       <div class="section-container">
@@ -964,12 +973,21 @@ body {
 
 /* Marquee Section */
 .marquee-section {
-  background: linear-gradient(90deg, var(--saturated-red) 0%, #ff1f1f 50%, var(--saturated-red) 100%);
   height: 120px;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
+}
+
+/* Red Marquee */
+.marquee-section:not(.green-marquee) {
+  background: linear-gradient(90deg, var(--saturated-red) 0%, #ff1f1f 50%, var(--saturated-red) 100%);
+}
+
+/* Green Marquee */
+.green-marquee {
+  background: linear-gradient(90deg, #2ECC71 0%, #27AE60 50%, #2ECC71 100%);
 }
 
 .marquee-container {
@@ -984,7 +1002,6 @@ body {
 }
 
 .marquee-item {
-  color: var(--white);
   font-size: 4rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -994,6 +1011,15 @@ body {
   white-space: nowrap;
   animation: slideIn 10s linear infinite;
   transform: translateX(100vw);
+}
+
+.marquee-section:not(.green-marquee) .marquee-item {
+  color: var(--white);
+}
+
+.green-marquee .marquee-item {
+  color: var(--black);
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
 }
 
 .marquee-item:nth-child(2) {
