@@ -78,10 +78,10 @@
             :key="session.id" 
             class="session-card"
           >
-            <div class="session-video">
+            <div class="session-video" :style="{ backgroundImage: `url(${session.image})` }">
               <div class="video-overlay">
                 <div class="play-icon">▶</div>
-            </div>
+              </div>
             </div>
             <div class="session-info">
               <h3>{{ session.title }}</h3>
@@ -231,9 +231,27 @@ const artists = [
 ]
 
 const sessions = [
-  { id: 1, title: 'LIVE SESSION #01', artist: 'LUNA ECLIPSE', date: '2024' },
-  { id: 2, title: 'ACOUSTIC SERIES', artist: 'CYBER FOLK', date: '2024' },
-  { id: 3, title: 'UNDERGROUND VIBES', artist: 'DARK MATTER', date: '2024' }
+  { 
+    id: 1, 
+    title: 'LIVE SESSION #01', 
+    artist: 'LUNA ECLIPSE', 
+    date: '2024',
+    image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2070'
+  },
+  { 
+    id: 2, 
+    title: 'ACOUSTIC SERIES', 
+    artist: 'CYBER FOLK', 
+    date: '2024',
+    image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070'
+  },
+  { 
+    id: 3, 
+    title: 'UNDERGROUND VIBES', 
+    artist: 'DARK MATTER', 
+    date: '2024',
+    image: 'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=2079'
+  }
 ]
 
 // Methods
@@ -651,9 +669,16 @@ body {
 
 .session-video {
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, var(--saturated-red), var(--electric-blue));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.session-video:hover {
+  transform: scale(1.05);
 }
 
 .video-overlay {
