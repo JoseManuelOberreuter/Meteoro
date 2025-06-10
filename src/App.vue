@@ -4,7 +4,7 @@
     <nav class="nav" :class="{ 'nav-scrolled': isScrolled }">
       <div class="nav-container">
           <div class="nav-brand">
-          <h1>Meteoro</h1>
+          <h1>METEORO</h1>
         </div>
         <div class="nav-menu">
           <a href="#artistas" @click="scrollTo('artistas')">ARTISTAS</a>
@@ -177,7 +177,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2024 Meteoro. MÁS QUE MÚSICA, SOMOS IMPACTO.</p>
+        <p>&copy; 2024 METEORO. MÁS QUE MÚSICA, SOMOS IMPACTO.</p>
       </div>
     </footer>
   </div>
