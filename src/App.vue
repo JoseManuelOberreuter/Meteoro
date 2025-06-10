@@ -4,7 +4,7 @@
     <nav class="nav" :class="{ 'nav-scrolled': isScrolled }">
       <div class="nav-container">
           <div class="nav-brand">
-          <h1>METEORTO</h1>
+          <h1>Meteoro</h1>
         </div>
         <div class="nav-menu">
           <a href="#artistas" @click="scrollTo('artistas')">ARTISTAS</a>
@@ -78,7 +78,7 @@
             :key="session.id" 
             class="session-card"
           >
-            <div class="session-video" :style="{ backgroundImage: `url(${session.image})` }">
+            <div class="session-video">
               <div class="video-overlay">
                 <div class="play-icon">▶</div>
               </div>
@@ -99,7 +99,7 @@
           <div class="about-text">
             <h2 class="section-title">SOBRE NOSOTROS</h2>
             <p>
-              Meteorto no es solo una discográfica. Somos un colectivo de visionarios 
+              Meteoro no es solo una discográfica. Somos un colectivo de visionarios 
               que transformamos sonidos en experiencias, artistas en iconos y música 
               en movimientos culturales.
             </p>
@@ -147,17 +147,17 @@
             <h3>¿TIENES EL SONIDO QUE BUSCAMOS?</h3>
             <p>Envíanos tu demo y únete a la revolución sonora.</p>
             <div class="contact-methods">
-              <a href="mailto:demos@meteorto.com" class="contact-method">
+              <a href="mailto:demos@Meteoro.com" class="contact-method">
                 <span>DEMOS</span>
-                <span>demos@meteorto.com</span>
+                <span>demos@Meteoro.com</span>
               </a>
-              <a href="mailto:booking@meteorto.com" class="contact-method">
+              <a href="mailto:booking@Meteoro.com" class="contact-method">
                 <span>BOOKING</span>
-                <span>booking@meteorto.com</span>
+                <span>booking@Meteoro.com</span>
               </a>
-              <a href="mailto:press@meteorto.com" class="contact-method">
+              <a href="mailto:press@Meteoro.com" class="contact-method">
                 <span>PRENSA</span>
-                <span>press@meteorto.com</span>
+                <span>press@Meteoro.com</span>
               </a>
             </div>
           </div>
@@ -177,7 +177,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2024 METEORTO. MÁS QUE MÚSICA, SOMOS IMPACTO.</p>
+        <p>&copy; 2024 Meteoro. MÁS QUE MÚSICA, SOMOS IMPACTO.</p>
       </div>
     </footer>
   </div>
