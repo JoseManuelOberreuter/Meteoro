@@ -4,8 +4,8 @@
     <nav class="nav" :class="{ 'nav-scrolled': isScrolled }">
       <div class="nav-container">
           <div class="nav-brand">
-          <h1>METEORO</h1>
-        </div>
+git 
+          </div>
         <div class="nav-menu">
           <a href="#artistas" @click="scrollTo('artistas')">ARTISTAS</a>
           <a href="#sesiones" @click="scrollTo('sesiones')">SESIONES</a>
@@ -123,7 +123,35 @@
             </div>
           </div>
           <div class="about-visual">
-            <div class="visual-element"></div>
+            <div class="visual-element">
+              <img src="@/assets/Sin Fondo_IMAGOTIPO.png" alt="METEORO Imagotipo" class="visual-imagotipo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="team-section">
+      <div class="section-container">
+        <div class="team-content">
+          <div class="team-text">
+            <h2 class="section-title">NUESTRO EQUIPO</h2>
+            <p>
+              Somos más que una discográfica. Somos un colectivo de mentes creativas,
+              productores visionarios y talentos emergentes que trabajamos juntos
+              para revolucionar la industria musical.
+            </p>
+            <p>
+              Cada miembro de nuestro equipo aporta una perspectiva única,
+              desde la producción hasta la promoción, creando un ecosistema
+              donde la creatividad no tiene límites.
+            </p>
+          </div>
+          <div class="team-visual">
+            <div class="team-image">
+              <img src="@/assets/SELLO METEORO 5_1.jpg" alt="Nuestro Equipo METEORO" class="team-photo">
+            </div>
           </div>
         </div>
       </div>
@@ -292,6 +320,8 @@ onUnmounted(() => {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -304,7 +334,7 @@ html {
 }
 
 body {
-  font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.4;
   color: #1A1A1A;
   background-color: #F3F0EA;
@@ -347,11 +377,45 @@ body {
   align-items: center;
 }
 
-.nav-brand h1 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--neon-yellow);
-  letter-spacing: 2px;
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-brand-link:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.nav-isotipo {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.nav-logotipo {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.nav-scrolled .nav-isotipo {
+  height: 45px;
+  filter: brightness(1.2) contrast(1.2);
+}
+
+.nav-scrolled .nav-logotipo {
+  height: 30px;
+  filter: brightness(1.2) contrast(1.2);
 }
 
 .nav-menu {
@@ -759,6 +823,7 @@ body {
   line-height: 1.6;
   margin-bottom: 30px;
   opacity: 0.9;
+  text-align: justify;
 }
 
 .stats {
@@ -794,17 +859,103 @@ body {
 }
 
 .visual-element {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: var(--neon-yellow);
   border-radius: 50%;
   position: relative;
   animation: pulse 3s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.visual-imagotipo {
+  width: 75%;
+  height: auto;
+  filter: contrast(1.2) brightness(0.1);
+  transition: all 0.3s ease;
+  animation: float-subtle 4s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(249, 255, 69, 0.4); }
   50% { transform: scale(1.05); box-shadow: 0 0 0 40px rgba(249, 255, 69, 0); }
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+/* Team Section */
+.team-section {
+  padding: 120px 0;
+  background: var(--electric-blue);
+}
+
+.team-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.team-text {
+  color: var(--white);
+}
+
+.team-text .section-title {
+  color: var(--white);
+  text-align: left;
+  margin-bottom: 40px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.team-text p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.team-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.team-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  width: 100%;
+  max-width: 600px;
+}
+
+.team-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.team-image:hover .team-photo {
+  transform: scale(1.05);
 }
 
 /* Contact Section */
@@ -950,6 +1101,11 @@ body {
   }
   
   .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .team-content {
     grid-template-columns: 1fr;
     gap: 40px;
   }
