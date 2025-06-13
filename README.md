@@ -38,9 +38,11 @@ METEORO/
 ### Secciones
 1. **Hero**: Animación de texto por líneas con efecto de entrada
 2. **Artistas**: Grid responsivo con hover effects
-3. **Sesiones**: Galería de videos con overlay interactivo
-4. **Sobre Nosotros**: Sección con estadísticas animadas
-5. **Contacto**: Formularios y enlaces sociales interactivos
+3. **Catálogo**: Galería de videos con overlay interactivo
+4. **Sobre Nosotrxs**: Sección con estadísticas animadas
+5. **Noticias**: Grid de noticias con card destacada
+6. **Tienda**: Sección "Coming Soon" con diseño glassmorphism
+7. **Contacto**: Formularios y enlaces sociales interactivos
 
 ### Componentes Destacados
 - Navegación con efecto de scroll
