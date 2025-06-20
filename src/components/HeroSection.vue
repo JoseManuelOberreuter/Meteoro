@@ -54,7 +54,7 @@ onMounted(() => {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #0A0A0A 100%);
+  background: #F5F5F0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@ onMounted(() => {
   font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 900;
   letter-spacing: -1px;
-  color: var(--white);
+  color: #1A1A1A;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -92,8 +92,8 @@ onMounted(() => {
 }
 
 .title-line.highlight {
-  color: var(--neon-yellow);
-  text-shadow: 0 0 30px rgba(249, 255, 69, 0.5);
+  color: var(--electric-blue);
+  text-shadow: 0 0 30px rgba(51, 102, 204, 0.2);
 }
 
 .title-line.accent {
@@ -111,7 +111,7 @@ onMounted(() => {
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 0;
+  border-radius: 4px;
   position: relative;
   overflow: hidden;
 }
@@ -144,12 +144,12 @@ onMounted(() => {
   right: 0;
   bottom: 0;
   z-index: 1;
-  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
 }
 
 .bg-shape {
   position: absolute;
-  opacity: 0.15;
+  opacity: 0.08;
   animation: float 6s ease-in-out infinite;
   filter: blur(5px);
 }
@@ -171,7 +171,7 @@ onMounted(() => {
   left: 10%;
   transform: rotate(45deg);
   animation-delay: 2s;
-  background: var(--neon-yellow);
+  background: var(--saturated-red);
 }
 
 .shape-3 {
@@ -181,7 +181,7 @@ onMounted(() => {
   left: 5%;
   border-radius: 100px;
   animation-delay: 4s;
-  background: var(--saturated-red);
+  background: var(--electric-blue);
 }
 
 .shape-4 {
@@ -192,8 +192,8 @@ onMounted(() => {
   border-radius: 30px;
   transform: rotate(-15deg);
   animation-delay: 1s;
-  background: var(--white);
-  opacity: 0.05;
+  background: #1A1A1A;
+  opacity: 0.03;
 }
 
 @keyframes float {

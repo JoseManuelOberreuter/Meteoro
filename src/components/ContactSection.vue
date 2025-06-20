@@ -1,7 +1,7 @@
 <template>
   <section id="contacto" class="contact-section">
     <div class="section-container">
-      <h2 class="section-title">CONECTA CON NOSOTROS</h2>
+      <h2 class="section-title">CONTACTANOS</h2>
       <div class="contact-grid">
         <div class="contact-info">
           <h3>¿TIENES EL SONIDO QUE BUSCAMOS?</h3>
@@ -48,18 +48,20 @@
 }
 
 .section-title {
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 900;
-  text-align: center;
-  margin-bottom: 80px;
+  text-align: left;
+  margin-bottom: 40px;
   letter-spacing: -1px;
   color: var(--black);
+  border-bottom: 5px solid #000000;
+  display: inline-block;
 }
 
 /* Contact Section */
 .contact-section {
   padding: 120px 0;
-  background: var(--white);
+  background: #F5F5F0;
 }
 
 .contact-grid {

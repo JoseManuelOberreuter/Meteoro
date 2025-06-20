@@ -40,16 +40,19 @@
 .section-title {
   font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 900;
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px;
   letter-spacing: -1px;
   color: var(--black);
+  border-bottom: 5px solid #000000;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 /* Team Section */
 .team-section {
   padding: 120px 0;
-  background: var(--electric-blue);
+  background: #F5F5F0;
 }
 
 .team-content {
@@ -60,14 +63,17 @@
 }
 
 .team-text {
-  color: var(--white);
+  color: #1A1A1A;
 }
 
 .team-text .section-title {
-  color: var(--white);
+  color: #1A1A1A;
   text-align: left;
   margin-bottom: 40px;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
+  border-bottom: 5px solid #000000;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 .team-text p {

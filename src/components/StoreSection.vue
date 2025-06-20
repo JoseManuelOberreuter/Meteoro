@@ -26,26 +26,28 @@
 }
 
 .section-title {
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 900;
-  text-align: center;
-  margin-bottom: 80px;
+  text-align: left;
+  margin-bottom: 40px;
   letter-spacing: -1px;
   color: var(--black);
+  border-bottom: 5px solid #000000;
+  display: inline-block;
 }
 
 /* Store Section */
 .store-section {
   padding: 80px 0;
-  background: #2ECC71;
+  background: #F5F5F0;
 }
 
 .coming-soon-content {
-  text-align: center;
+  text-align: left;
 }
 
 .store-section .section-title {
-  color: var(--white);
+  color: #1A1A1A;
   margin-bottom: 40px;
 }
 
@@ -54,8 +56,9 @@
   border-radius: 10px;
   padding: 40px 30px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .construction-icon {

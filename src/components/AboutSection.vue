@@ -5,28 +5,14 @@
         <div class="about-text">
           <h2 class="section-title">SOBRE NOSOTRXS</h2>
           <p>
-            Meteoro no es solo una discográfica. Somos un colectivo de visionarios 
-            que transformamos sonidos en experiencias, artistas en iconos y música 
-            en movimientos culturales.
+            Somos una discográfica independiente fundada en Santiago de Chile.
           </p>
           <p>
-            Desde el underground hasta las principales plataformas, cultivamos 
-            talento auténtico y llevamos el arte sonoro a nuevas dimensiones.
+            Buscamos impulsar proyectos musicales de manera integral, abarcando puesta en escena, sonido, identidad visual y otros aspectos clave para su desarrollo dentro de la industria.
           </p>
-          <div class="stats">
-            <div class="stat">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">ARTISTAS</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">100M+</span>
-              <span class="stat-label">STREAMS</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">15</span>
-              <span class="stat-label">PAÍSES</span>
-            </div>
-          </div>
+          <p>
+            El corazón de Meteoro está en la generación de material audiovisual y la dirección de arte de los proyectos. Creemos que una identidad visual sólida y coherente es clave para conectar con nuevas audiencias, consolidar la presencia de los artistas en la industria y hacerlos parte de escenarios relevantes.
+          </p>
         </div>
         <div class="about-visual">
           <div class="visual-element">
@@ -53,33 +39,39 @@
 .section-title {
   font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 900;
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px;
   letter-spacing: -1px;
   color: var(--black);
+  border-bottom: 5px solid #000000;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 /* About Section */
 .about-section {
   padding: 120px 0;
-  background: var(--saturated-red);
+  background: #F5F5F0;
 }
 
 .about-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
 }
 
 .about-text {
-  color: var(--white);
+  color: #1A1A1A;
 }
 
 .about-text .section-title {
-  color: var(--white);
+  color: #1A1A1A;
   text-align: left;
   margin-bottom: 40px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  border-bottom: 5px solid #000000;
+  display: inline-block;
 }
 
 .about-text p {

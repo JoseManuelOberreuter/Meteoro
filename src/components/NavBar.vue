@@ -3,8 +3,7 @@
     <div class="nav-container">
       <div class="nav-brand">
         <a href="#" @click.prevent="scrollTo('app')" class="nav-brand-link">
-          <img src="@/assets/Sin Fondo_ISOTIPO BLANCO.png" alt="METEORO Isotipo" class="nav-isotipo">
-          <img src="@/assets/Sin Fondo-LOGOTIPO BLANCO.png" alt="METEORO" class="nav-logotipo">
+          <img src="@/assets/LOGO HEADER METEORO.png" alt="METEORO Logo" class="nav-logo">
         </a>
       </div>
       <div class="nav-menu">
@@ -57,14 +56,17 @@ onUnmounted(() => {
   right: 0;
   z-index: 1000;
   padding: 20px 0;
-  background: transparent;
+  background: #F5F5F0;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #000000;
 }
 
 .nav-scrolled {
-  background: rgba(26, 26, 26, 0.95);
+  background: rgba(245, 245, 240, 0.95);
   backdrop-filter: blur(10px);
   padding: 15px 0;
+  border-bottom: 5px solid #000000;
 }
 
 .nav-container {
@@ -93,28 +95,15 @@ onUnmounted(() => {
   opacity: 0.9;
 }
 
-.nav-isotipo {
+.nav-logo {
   height: 60px;
   width: auto;
   transition: all 0.3s ease;
-  filter: brightness(1.1) contrast(1.1);
+  filter: brightness(0.2) contrast(1.1);
 }
 
-.nav-logotipo {
-  height: 40px;
-  width: auto;
-  transition: all 0.3s ease;
-  filter: brightness(1.1) contrast(1.1);
-}
-
-.nav-scrolled .nav-isotipo {
+.nav-scrolled .nav-logo {
   height: 45px;
-  filter: brightness(1.2) contrast(1.2);
-}
-
-.nav-scrolled .nav-logotipo {
-  height: 30px;
-  filter: brightness(1.2) contrast(1.2);
 }
 
 .nav-menu {
@@ -123,7 +112,7 @@ onUnmounted(() => {
 }
 
 .nav-menu a {
-  color: var(--white);
+  color: #1A1A1A;
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
@@ -133,7 +122,7 @@ onUnmounted(() => {
 }
 
 .nav-menu a:hover {
-  color: var(--neon-yellow);
+  color: #000000;
   transform: translateY(-2px);
 }
 
@@ -144,7 +133,7 @@ onUnmounted(() => {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--neon-yellow);
+  background: #000000;
   transition: width 0.3s ease;
 }
 

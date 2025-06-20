@@ -39,33 +39,39 @@ const playHoverSound = () => {
 }
 
 .section-title {
-  font-size: clamp(3rem, 6vw, 6rem);
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 80px;
-  letter-spacing: -1px;
-  color: var(--black);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Artists Section */
 .artists-section {
   padding: 120px 0;
-  background: var(--white);
+  background: #F5F5F0;
 }
 
 .artists-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .artist-card {
-  aspect-ratio: 1;
+  aspect-ratio: 2/3;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.4s ease;
   border-radius: 4px;
+  height: 600px;
 }
 
 .artist-card:hover {
@@ -134,6 +140,10 @@ const playHoverSound = () => {
   
   .artists-grid {
     grid-template-columns: 1fr;
+  }
+
+  .artist-card {
+    height: 500px;
   }
 }
 </style> 
