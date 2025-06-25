@@ -41,7 +41,7 @@
         </div>
       </div>
       
-      <p>&copy; 2024 METEORO. MÁS QUE MÚSICA, SOMOS IMPACTO.</p>
+      <p>&copy; 2024 SELLO METEORO.</p>
     </div>
   </footer>
 </template>
