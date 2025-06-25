@@ -27,9 +27,6 @@
     <!-- News Section -->
     <NewsSection />
 
-    <!-- Contact Section -->
-    <ContactSection />
-
     <!-- Store Section -->
     <StoreSection />
     
@@ -48,7 +45,6 @@ import SessionsSection from './components/SessionsSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import TeamSection from './components/TeamSection.vue'
 import NewsSection from './components/NewsSection.vue'
-import ContactSection from './components/ContactSection.vue'
 import StoreSection from './components/StoreSection.vue'
 import FooterSection from './components/FooterSection.vue'
 
