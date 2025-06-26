@@ -57,14 +57,14 @@ onUnmounted(() => {
   background: #F5F5F0;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid #000000;
+  border-bottom: 4px solid #000000;
 }
 
 .nav-scrolled {
   background: rgba(245, 245, 240, 0.95);
   backdrop-filter: blur(10px);
   padding: 8px 0;
-  border-bottom: 3px solid #000000;
+  border-bottom: 4px solid #000000;
 }
 
 .nav-container {

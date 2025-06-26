@@ -8,7 +8,10 @@
           :key="session.id" 
           class="session-card"
         >
-          <div class="session-video">
+          <div 
+            class="session-video"
+            :style="{ backgroundImage: `url(${session.image})` }"
+          >
             <div class="video-overlay">
               <div class="play-icon">▶</div>
             </div>
@@ -66,6 +69,7 @@ import { sessions } from '@/data/sessions.js'
   background: var(--white);
   overflow: hidden;
   transition: all 0.4s ease;
+  border: 4px solid #000000;
 }
 
 .session-card:hover {
@@ -80,11 +84,12 @@ import { sessions } from '@/data/sessions.js'
   background-repeat: no-repeat;
   position: relative;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #1A1A1A;
 }
 
 .session-video:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .video-overlay {
@@ -96,12 +101,12 @@ import { sessions } from '@/data/sessions.js'
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
 
 .session-video:hover .video-overlay {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .play-icon {

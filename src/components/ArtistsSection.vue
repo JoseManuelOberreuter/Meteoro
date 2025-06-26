@@ -73,6 +73,7 @@ const playHoverSound = () => {
   transition: all 0.4s ease;
   border-radius: 4px;
   height: 600px;
+  border: 4px solid #000000;
 }
 
 .artist-card:hover {
