@@ -55,18 +55,18 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 20px 0;
+  padding: 12px 0;
   background: #F5F5F0;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 5px solid #000000;
+  border-bottom: 3px solid #000000;
 }
 
 .nav-scrolled {
   background: rgba(245, 245, 240, 0.95);
   backdrop-filter: blur(10px);
-  padding: 15px 0;
-  border-bottom: 5px solid #000000;
+  padding: 8px 0;
+  border-bottom: 3px solid #000000;
 }
 
 .nav-container {
@@ -96,14 +96,14 @@ onUnmounted(() => {
 }
 
 .nav-logo {
-  height: 60px;
+  height: 45px;
   width: auto;
   transition: all 0.3s ease;
   filter: brightness(0.2) contrast(1.1);
 }
 
 .nav-scrolled .nav-logo {
-  height: 45px;
+  height: 35px;
 }
 
 .nav-menu {

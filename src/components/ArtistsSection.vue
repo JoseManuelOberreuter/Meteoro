@@ -54,6 +54,7 @@ const playHoverSound = () => {
 .artists-section {
   padding: 120px 0;
   background: #F5F5F0;
+  margin-top: 40px;
 }
 
 .artists-grid {

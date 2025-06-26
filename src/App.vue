@@ -3,9 +3,6 @@
     <!-- Navigation -->
     <NavBar :scrollTo="scrollTo" />
 
-    <!-- Hero Section -->
-    <HeroSection :scrollTo="scrollTo" />
-
     <!-- Artists Section -->
     <ArtistsSection />
 
@@ -38,7 +35,6 @@
 <script setup>
 // Import all components
 import NavBar from './components/NavBar.vue'
-import HeroSection from './components/HeroSection.vue'
 import ArtistsSection from './components/ArtistsSection.vue'
 import MarqueeSection from './components/MarqueeSection.vue'
 import SessionsSection from './components/SessionsSection.vue'
