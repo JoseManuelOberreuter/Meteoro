@@ -7,11 +7,9 @@
         </a>
       </div>
       <div class="nav-menu">
-        <a href="#artistas" @click="scrollTo('artistas')">ARTISTAS</a>
         <a href="#catalogo" @click="scrollTo('catalogo')">CATÁLOGO</a>
         <a href="#sobre" @click="scrollTo('sobre')">SOBRE NOSOTRXS</a>
         <a href="#noticias" @click="scrollTo('noticias')">NOTICIAS</a>
-        <a href="#contacto" @click="scrollTo('contacto')">CONTACTO</a>
         <a href="#tienda" @click="scrollTo('tienda')">TIENDA</a>
       </div>
     </div>
