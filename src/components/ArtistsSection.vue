@@ -23,21 +23,20 @@
       <div id="featured-artist" class="featured-artist-section">
         <div class="featured-artist-container">
           <div class="featured-artist-image">
-            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop" alt="Luna Eclipse" />
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop" alt="ALONSX TERCERX" />
           </div>
           <div class="featured-artist-content text-right">
-            <h2 class="featured-artist-title">LUNA ECLIPSE</h2>
+            <h2 class="featured-artist-title">ALONSX TERCERX</h2>
             <p class="featured-artist-description">
-              LUNA ECLIPSE es un proyecto de electronic soul que 
-              fusiona sonidos etéreos con ritmos profundos, 
-              creando paisajes sonoros únicos y envolventes.
+              ALONSX TERCERX es un proyecto artístico que cruza música 
+              y performance, explorando sonoridades provenientes del funk, 
+              el soul, la música disco y el R&B, pero siempre con rumbo 
+              al pop de pista de baile.
             </p>
             <p class="featured-artist-description">
-                            Con una identidad artística que explora la conexión 
-              entre lo cósmico y lo terrenal, Luna Eclipse presenta 
-              composiciones que invitan a la introspección y el 
-              movimiento, llevando al oyente a un viaje emocional 
-              a través de texturas sonoras innovadoras.
+              Todo esto se articula con una identidad visual potente 
+              y disidente, reflejada en el videoclip de "FUERTE", 
+              primer single de su EP debut "TRES" (2025).
             </p>
             <div class="social-links">
               <a href="#" class="social-link">YOUTUBE</a>
@@ -51,22 +50,21 @@
       <div id="featured-neon-rebels" class="featured-artist-section">
         <div class="featured-artist-container reverse">
           <div class="featured-artist-image">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop" alt="Neon Rebels" />
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop" alt="DONATO SOTO" />
           </div>
           <div class="featured-artist-content">
-            <h2 class="featured-artist-title">NEON REBELS</h2>
+            <h2 class="featured-artist-title">DONATO SOTO</h2>
             <p class="featured-artist-description">
-              NEON REBELS es una banda de indie rock que combina 
-              guitarras distorsionadas con melodías pegajosas y 
-              letras introspectivas que reflejan la experiencia 
-              urbana contemporánea.
+              DONATO SOTO es el alter ego de Benjamín Cárdenas, alias 
+              que utiliza desde 2017 para desarrollar una propuesta 
+              de pop lo-fi marcada por una lírica que oscila entre 
+              la sinceridad emocional y la ironía.
             </p>
             <p class="featured-artist-description">
-              Con un sonido que fusiona el indie rock clásico con 
-              elementos modernos, Neon Rebels crea atmósferas 
-              nostálgicas y energéticas que conectan con una nueva 
-              generación de oyentes buscando autenticidad y rebeldía 
-              en la música.
+              A la fecha ha publicado el EP "Carrete en el infierno" 
+              (2018) y el álbum "Sapito de oro puro" (2020); y 
+              actualmente se encuentra trabajando en su próxima 
+              producción.
             </p>
             <div class="social-links">
               <a href="#" class="social-link">YOUTUBE</a>
@@ -80,22 +78,21 @@
       <div id="featured-aurora-beats" class="featured-artist-section">
         <div class="featured-artist-container">
           <div class="featured-artist-image">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop" alt="Aurora Beats" />
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop" alt="JOSEIKNACIO" />
           </div>
           <div class="featured-artist-content text-right">
-            <h2 class="featured-artist-title">AURORA BEATS</h2>
+            <h2 class="featured-artist-title">JOSEIKNACIO</h2>
             <p class="featured-artist-description">
-              AURORA BEATS es un proyecto experimental que explora 
-              las fronteras del sonido, fusionando elementos de 
-              ambient, techno y música concreta para crear paisajes 
-              sonoros únicos e inmersivos.
+              JOSEIKNACIO es un proyecto que nace desde la estética 
+              indie pop con premisas lo-fi, para adentrarse en sonidos 
+              de alta delicadeza y melancolía lírica, pero al mismo 
+              tiempo envolventes y cálidos; elementos que se plasman 
+              en su EP debut "Floración" (2019).
             </p>
             <p class="featured-artist-description">
-              Cada composición de Aurora Beats es un viaje sonoro 
-              que desafía las convenciones musicales tradicionales, 
-              invitando al oyente a explorar nuevas dimensiones 
-              auditivas a través de texturas, ritmos y atmosferas 
-              completamente innovadoras.
+              Tras una pausa, el proyecto retoma su camino con nuevo 
+              material en desarrollo, el cual formará parte de distintos 
+              lanzamientos previstos para los próximos meses.
             </p>
             <div class="social-links">
               <a href="#" class="social-link">YOUTUBE</a>
@@ -122,13 +119,13 @@ const handleArtistClick = (artist) => {
   
   // Determinar la sección objetivo basada en el nombre del artista
   switch (artist.name) {
-    case 'LUNA ECLIPSE':
+    case 'ALONSX TERCERX':
       targetSectionId = 'featured-artist';
       break;
-    case 'NEON REBELS':
+    case 'DONATO SOTO':
       targetSectionId = 'featured-neon-rebels';
       break;
-    case 'AURORA BEATS':
+    case 'JOSEIKNACIO':
       targetSectionId = 'featured-aurora-beats';
       break;
     default:
@@ -251,17 +248,17 @@ const handleArtistClick = (artist) => {
 }
 
 /* Artist-Specific Styling */
-.artist-card:hover .artist-overlay h3[title="LUNA ECLIPSE"] {
+.artist-card:hover .artist-overlay h3[title="ALONSX TERCERX"] {
   color: #FFD700;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-.artist-card:hover .artist-overlay h3[title="NEON REBELS"] {
+.artist-card:hover .artist-overlay h3[title="DONATO SOTO"] {
   color: #00FFFF;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-.artist-card:hover .artist-overlay h3[title="AURORA BEATS"] {
+.artist-card:hover .artist-overlay h3[title="JOSEIKNACIO"] {
   color: #FF69B4;
   text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
 }
