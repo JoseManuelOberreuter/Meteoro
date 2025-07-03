@@ -18,6 +18,7 @@
           <div class="team-image">
             <img src="@/assets/SELLO METEORO 5_1.jpg" alt="Nuestro Equipo METEORO" class="team-photo">
           </div>
+          <p class="team-description">Equipo meteoro; de izquierda a derecha Dani, Stefa y Jaque</p>
         </div>
       </div>
     </div>
@@ -85,6 +86,7 @@
 
 .team-visual {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -114,6 +116,15 @@
 
 .team-image:hover .team-photo {
   transform: scale(1.05);
+}
+
+.team-description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.4;
 }
 
 /* Responsive Design */

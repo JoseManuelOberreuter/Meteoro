@@ -1,9 +1,11 @@
+import AlonsxTercerxImage from '@/assets/Alonsx_Tercerx_FOTO_V1.jpg'
+
 export const artists = [
   { 
     id: 1, 
     name: 'ALONSX TERCERX', 
     genre: 'POP/FUNK/SOUL',
-    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop'
+    image: AlonsxTercerxImage
   },
   { 
     id: 2, 

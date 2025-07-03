@@ -23,7 +23,7 @@
       <div id="featured-artist" class="featured-artist-section">
         <div class="featured-artist-container">
           <div class="featured-artist-image">
-            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop" alt="ALONSX TERCERX" />
+            <img :src="AlonsxTercerxImage" alt="ALONSX TERCERX" />
           </div>
           <div class="featured-artist-content text-right">
             <h2 class="featured-artist-title">ALONSX TERCERX</h2>
@@ -111,6 +111,7 @@
 
 <script setup>
 import { artists } from '@/data/artists.js'
+import AlonsxTercerxImage from '@/assets/Alonsx_Tercerx_FOTO_V1.jpg'
 
 // Methods
 const playHoverSound = () => {
@@ -193,15 +194,15 @@ const handleArtistClick = (artist) => {
 }
 
 .artist-card:hover {
-  transform: scale(1.05);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 .artist-image {
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -395,7 +396,7 @@ const handleArtistClick = (artist) => {
 .featured-artist-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
