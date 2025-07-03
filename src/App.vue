@@ -6,9 +6,6 @@
     <!-- Artists Section -->
     <ArtistsSection />
 
-    <!-- Marquee Section -->
-    <MarqueeSection text="LOREM IPSUM DOLOR SIT AMET • CONSECTETUR ADIPISCING • ELIT SED DO EIUSMOD" />
-
     <!-- Sessions Section -->
     <SessionsSection />
 
@@ -17,9 +14,6 @@
 
     <!-- Team Section -->
     <TeamSection />
-
-    <!-- Green Marquee Section -->
-    <MarqueeSection text="DESCUBRE • INNOVA • TRANSFORMA • IMPACTA • EVOLUCIONA" :isGreen="true" />
 
     <!-- News Section -->
     <NewsSection />
@@ -36,7 +30,6 @@
 // Import all components
 import NavBar from './components/NavBar.vue'
 import ArtistsSection from './components/ArtistsSection.vue'
-import MarqueeSection from './components/MarqueeSection.vue'
 import SessionsSection from './components/SessionsSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import TeamSection from './components/TeamSection.vue'
