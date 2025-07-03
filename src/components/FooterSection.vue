@@ -2,6 +2,15 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-main">
+        <div class="footer-logo">
+          <img 
+            src="@/assets/Sin Fondo_IMAGOTIPO.png" 
+            alt="METEORO Logo" 
+            class="footer-logo-image"
+            @click="scrollToTop"
+          >
+        </div>
+        
         <div class="footer-newsletter">
           <h3>SUSCRÍBETE</h3>
           <p>Suscríbete y disfruta de material exclusivo, novedades, descuentos y más</p>
@@ -59,6 +68,13 @@ const handleSubmit = () => {
   // Reset form
   email.value = ''
 }
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
 </script>
 
 <style scoped>
@@ -81,6 +97,24 @@ const handleSubmit = () => {
   align-items: center;
   gap: 60px;
   margin-bottom: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-logo-image {
+  height: 9rem;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo-image:hover {
+  transform: scale(1.1);
+  filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
 .footer-newsletter {
@@ -106,11 +140,12 @@ const handleSubmit = () => {
 .newsletter-form {
   display: flex;
   gap: 15px;
-  max-width: 400px;
+  max-width: 550px;
 }
 
 .newsletter-input {
   flex: 1;
+  min-width: 300px;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -200,6 +235,15 @@ const handleSubmit = () => {
     text-align: center;
   }
   
+  .footer-logo {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo-image {
+    height: 50px;
+  }
+
   .footer-newsletter {
     text-align: center;
   }
@@ -207,12 +251,13 @@ const handleSubmit = () => {
   .newsletter-form {
     flex-direction: column;
     gap: 15px;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
   }
   
   .newsletter-input {
     padding: 10px 15px;
+    min-width: 280px;
   }
   
   .newsletter-button {
