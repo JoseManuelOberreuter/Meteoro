@@ -39,8 +39,9 @@
               primer single de su EP debut "TRES" (2025).
             </p>
             <div class="social-links">
-              <a href="#" class="social-link">YOUTUBE</a>
+              <a href="#" class="social-link">MUSICA</a>
               <a href="#" class="social-link">INSTAGRAM</a>
+              <a href="#" class="social-link">YOUTUBE</a>
             </div>
           </div>
         </div>
@@ -67,8 +68,9 @@
               producción.
             </p>
             <div class="social-links">
-              <a href="#" class="social-link">YOUTUBE</a>
+              <a href="#" class="social-link">MUSICA</a>
               <a href="#" class="social-link">INSTAGRAM</a>
+              <a href="#" class="social-link">YOUTUBE</a>
             </div>
           </div>
         </div>
@@ -95,8 +97,9 @@
               lanzamientos previstos para los próximos meses.
             </p>
             <div class="social-links">
-              <a href="#" class="social-link">YOUTUBE</a>
+              <a href="#" class="social-link">MUSICA</a>
               <a href="#" class="social-link">INSTAGRAM</a>
+              <a href="#" class="social-link">YOUTUBE</a>
             </div>
           </div>
         </div>
@@ -354,8 +357,7 @@ const handleArtistClick = (artist) => {
   }
   
   .social-link {
-    padding: 8px 16px;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -441,21 +443,18 @@ const handleArtistClick = (artist) => {
 }
 
 .social-link {
-  background: #000000;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  color: #000000;
+  font-size: 1.3rem;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 4px;
   transition: all 0.3s ease;
   display: inline-block;
+  border-bottom: 2px solid transparent;
 }
 
 .social-link:hover {
-  background: #333333;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #ff0000;
+  border-bottom: 2px solid #ff0000;
 }
 
 </style> 

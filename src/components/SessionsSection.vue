@@ -1,7 +1,7 @@
 <template>
   <section id="catalogo" class="sessions-section">
     <div class="section-container">
-      <h2 class="section-title light">CATÁLOGO</h2>
+      <h2 class="section-title light">LANZAMIENTOS</h2>
       <div class="sessions-grid">
         <div 
           v-for="session in sessions" 

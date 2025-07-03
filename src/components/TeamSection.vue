@@ -3,16 +3,15 @@
     <div class="section-container">
       <div class="team-content">
         <div class="team-text">
-          <h2 class="section-title">NUESTRO EQUIPO</h2>
+          <h2 class="section-title">SOBRE NOSOTRXS</h2>
           <p>
-            Somos más que una discográfica. Somos un colectivo de mentes creativas,
-            productores visionarios y talentos emergentes que trabajamos juntos
-            para revolucionar la industria musical.
+            Somos una discográfica independiente fundada en Santiago de Chile.
           </p>
           <p>
-            Cada miembro de nuestro equipo aporta una perspectiva única,
-            desde la producción hasta la promoción, creando un ecosistema
-            donde la creatividad no tiene límites.
+            Buscamos impulsar proyectos musicales de manera integral, abarcando puesta en escena, sonido, identidad visual y otros aspectos clave para su desarrollo dentro de la industria.
+          </p>
+          <p>
+            El corazón de Meteoro está en la generación de material audiovisual y la dirección de arte de los proyectos. Creemos que una identidad visual sólida y coherente es clave para conectar con nuevas audiencias, consolidar la presencia de los artistas en la industria y hacerlos parte de escenarios relevantes.
           </p>
         </div>
         <div class="team-visual">

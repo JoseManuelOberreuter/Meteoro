@@ -7,10 +7,10 @@
         </a>
       </div>
       <div class="nav-menu">
-        <a href="#catalogo" @click="scrollTo('catalogo')">CATÁLOGO</a>
-        <a href="#sobre" @click="scrollTo('sobre')">SOBRE NOSOTRXS</a>
-        <a href="#noticias" @click="scrollTo('noticias')">NOTICIAS</a>
-        <a href="#tienda" @click="scrollTo('tienda')">TIENDA</a>
+        <a href="#artistas" @click="scrollTo('artistas')">ARTISTAS</a>
+        <a href="#catalogo" @click="scrollTo('catalogo')">LANZAMIENTOS</a>
+                  <a href="#equipo" @click="scrollTo('equipo')">NOSOTRXS</a>
+          <a href="#tienda" @click="scrollTo('tienda')">TIENDA</a>
       </div>
     </div>
   </nav>

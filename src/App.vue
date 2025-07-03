@@ -9,14 +9,8 @@
     <!-- Sessions Section -->
     <SessionsSection />
 
-    <!-- About Section -->
-    <AboutSection />
-
     <!-- Team Section -->
     <TeamSection />
-
-    <!-- News Section -->
-    <NewsSection />
 
     <!-- Store Section -->
     <StoreSection />
@@ -31,9 +25,7 @@
 import NavBar from './components/NavBar.vue'
 import ArtistsSection from './components/ArtistsSection.vue'
 import SessionsSection from './components/SessionsSection.vue'
-import AboutSection from './components/AboutSection.vue'
 import TeamSection from './components/TeamSection.vue'
-import NewsSection from './components/NewsSection.vue'
 import StoreSection from './components/StoreSection.vue'
 import FooterSection from './components/FooterSection.vue'
 
