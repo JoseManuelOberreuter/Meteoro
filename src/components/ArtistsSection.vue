@@ -180,7 +180,7 @@ const handleArtistClick = (artist) => {
   padding-top: 120px;
   padding-bottom: 0;
   background: #F5F5F0;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .artists-grid {
@@ -188,7 +188,7 @@ const handleArtistClick = (artist) => {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .artist-card {
