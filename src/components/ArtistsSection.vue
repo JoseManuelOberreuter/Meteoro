@@ -176,7 +176,8 @@ const handleArtistClick = (artist) => {
 
 /* Artists Section */
 .artists-section {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 0;
   background: #F5F5F0;
   margin-top: 40px;
 }
