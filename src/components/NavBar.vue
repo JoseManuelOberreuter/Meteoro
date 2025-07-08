@@ -9,7 +9,7 @@
       
       <!-- Desktop Menu -->
       <div class="nav-menu desktop-menu">
-        <a href="#artistas" @click="scrollTo('artistas')">ARTISTAS</a>
+        <a href="#featured-artist" @click="scrollTo('featured-artist')">ARTISTAS</a>
         <a href="#catalogo" @click="scrollTo('catalogo')">LANZAMIENTOS</a>
         <a href="#equipo" @click="scrollTo('equipo')">NOSOTRXS</a>
         <a href="#tienda" @click="scrollTo('tienda')">TIENDA</a>
@@ -40,7 +40,7 @@
         </button>
         
         <div class="mobile-menu-content">
-          <a href="#artistas" @click="handleMobileMenuClick('artistas')" class="mobile-menu-item">
+          <a href="#featured-artist" @click="handleMobileMenuClick('featured-artist')" class="mobile-menu-item">
             ARTISTAS
           </a>
           <a href="#catalogo" @click="handleMobileMenuClick('catalogo')" class="mobile-menu-item">

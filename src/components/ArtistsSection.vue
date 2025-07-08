@@ -187,8 +187,9 @@ const handleArtistClick = (artist) => {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0px auto;
+  justify-content: space-between;
 }
 
 .artist-card {
@@ -207,10 +208,23 @@ const handleArtistClick = (artist) => {
   background: #000000;
 }
 
+/* Posicionamiento específico de cada tarjeta */
+.artist-card:nth-child(1) {
+  justify-self: start;
+}
+
+.artist-card:nth-child(2) {
+  justify-self: center;
+}
+
+.artist-card:nth-child(3) {
+  justify-self: end;
+}
+
 .artist-card:hover {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
-  border-color: #FF6B6B;
+  border-color: #ff0000;
 }
 
 .artist-image {
@@ -273,18 +287,18 @@ const handleArtistClick = (artist) => {
 
 /* Artist-Specific Styling */
 .artist-card:hover .artist-overlay h3[title="ALONSX TERCERX"] {
-  color: #FFD700;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .artist-card:hover .artist-overlay h3[title="DONATO SOTO"] {
-  color: #00FFFF;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .artist-card:hover .artist-overlay h3[title="JOSEIKNACIO"] {
-  color: #FF69B4;
-  text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .click-indicator {
@@ -355,8 +369,16 @@ const handleArtistClick = (artist) => {
   /* Featured Artist Sections - Mobile */
   .featured-artist-section {
     margin-top: 40px;
-    padding: 30px 0;
+    padding: 60px 0;
     border-bottom: 1px solid #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  /* First featured section needs extra padding to account for fixed navbar on mobile */
+  .featured-artist-section:first-of-type {
+    padding-top: 120px;
   }
   
   .featured-artist-container {
@@ -387,6 +409,7 @@ const handleArtistClick = (artist) => {
   .featured-artist-title {
     font-size: 2.2rem;
     text-align: center !important;
+    margin-top: 0;
     margin-bottom: 25px;
     padding-bottom: 15px;
     border-bottom: 3px solid #000000;
@@ -475,7 +498,15 @@ const handleArtistClick = (artist) => {
   /* Featured sections - smaller mobile */
   .featured-artist-section {
     margin-top: 30px;
-    padding: 25px 0;
+    padding: 40px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* First featured section needs extra padding to account for fixed navbar on smaller mobile */
+  .featured-artist-section:first-of-type {
+    padding-top: 100px;
   }
   
   .featured-artist-container {
@@ -488,6 +519,7 @@ const handleArtistClick = (artist) => {
   
   .featured-artist-title {
     font-size: 1.9rem;
+    margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 12px;
     border-bottom: 2px solid #000000;
@@ -632,8 +664,16 @@ const handleArtistClick = (artist) => {
 /* Featured Artist Section */
 .featured-artist-section {
   margin-top: 80px;
-  padding: 40px 0;
+  padding: 150px 0;
   border-bottom: 1px solid #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* First featured section needs extra padding to account for fixed navbar */
+.featured-artist-section:first-of-type {
+  padding-top: 160px;
 }
 
 .featured-artist-section:last-of-type {
@@ -644,7 +684,7 @@ const handleArtistClick = (artist) => {
   display: flex;
   gap: 60px;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -670,7 +710,7 @@ const handleArtistClick = (artist) => {
 .featured-artist-content {
   flex: 1;
   text-align: left;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .featured-artist-content.text-right {
@@ -679,12 +719,14 @@ const handleArtistClick = (artist) => {
 
 .featured-artist-content.text-right .featured-artist-description {
   text-align: right;
+  margin-left: auto;
 }
 
 .featured-artist-title {
   font-size: 3rem;
   font-weight: 900;
   color: #000000;
+  margin-top: 0;
   margin-bottom: 30px;
   letter-spacing: -1px;
   border-bottom: 4px solid #000000;
@@ -698,6 +740,7 @@ const handleArtistClick = (artist) => {
   color: #333333;
   margin-bottom: 20px;
   text-align: justify;
+  max-width: 75%;
 }
 
 .social-links {
