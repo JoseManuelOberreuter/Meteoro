@@ -51,7 +51,7 @@
       <div id="featured-neon-rebels" class="featured-artist-section">
         <div class="featured-artist-container reverse">
           <div class="featured-artist-image">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop" alt="DONATO SOTO" />
+            <img :src="AlonsxTercerxImage" alt="DONATO SOTO" />
           </div>
           <div class="featured-artist-content">
             <h2 class="featured-artist-title">DONATO SOTO</h2>
@@ -80,7 +80,7 @@
       <div id="featured-aurora-beats" class="featured-artist-section">
         <div class="featured-artist-container">
           <div class="featured-artist-image">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop" alt="JOSEIKNACIO" />
+            <img :src="AlonsxTercerxImage" alt="JOSEIKNACIO" />
           </div>
           <div class="featured-artist-content text-right">
             <h2 class="featured-artist-title">JOSEIKNACIO</h2>
@@ -155,6 +155,13 @@ const handleArtistClick = (artist) => {
   padding: 0 40px;
 }
 
+/* Reset para cards */
+.artist-card * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .section-title {
   position: absolute;
   width: 1px;
@@ -177,24 +184,31 @@ const handleArtistClick = (artist) => {
 .artists-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1400px;
+  gap: 30px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .artist-card {
-  aspect-ratio: 2/3;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 0.8;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.4s ease;
-  border-radius: 4px;
-  height: 600px;
   border: 4px solid #000000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background: #000000;
 }
 
 .artist-card:hover {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  border-color: #FF6B6B;
 }
 
 .artist-image {
@@ -203,7 +217,11 @@ const handleArtistClick = (artist) => {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .artist-overlay {
@@ -212,7 +230,7 @@ const handleArtistClick = (artist) => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(26, 26, 26, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,7 +243,7 @@ const handleArtistClick = (artist) => {
 
 .artist-card:hover .artist-overlay {
   opacity: 1;
-  background: rgba(26, 26, 26, 0.85);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .artist-overlay h3 {
@@ -299,7 +317,7 @@ const handleArtistClick = (artist) => {
   }
 
   .artist-card {
-    height: 500px;
+    aspect-ratio: 0.8;
   }
   
   .featured-artist-section {
@@ -318,9 +336,10 @@ const handleArtistClick = (artist) => {
 
   .featured-artist-image {
     flex: 0 0 100%;
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 0.8;
+    background: #000000;
   }
 
   .featured-artist-content {
@@ -386,11 +405,11 @@ const handleArtistClick = (artist) => {
 }
 
 .featured-artist-image {
-  flex: 0 0 400px;
-  aspect-ratio: 3/4;
+  flex: 0 0 350px;
+  aspect-ratio: 0.8;
   overflow: hidden;
-  border-radius: 8px;
   border: 4px solid #000000;
+  background: #000000;
 }
 
 .featured-artist-image img {
