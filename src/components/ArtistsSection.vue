@@ -181,6 +181,9 @@ const handleArtistClick = (artist) => {
   padding-bottom: 0;
   background: #F5F5F0;
   margin-top: 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .artists-grid {
@@ -190,6 +193,7 @@ const handleArtistClick = (artist) => {
   max-width: 1400px;
   margin: 0px auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .artist-card {
@@ -323,11 +327,39 @@ const handleArtistClick = (artist) => {
 }
 
 /* Responsive Design */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+  .artists-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-container {
+    padding: 0 30px;
+  }
+  
+  .artists-grid {
+    gap: 25px;
+    max-width: 100%;
+    align-items: center;
+  }
+  
+  .artist-card {
+    max-width: 320px;
+  }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
   .artists-section {
     padding-top: 100px;
     padding-bottom: 30px;
     margin-top: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
   }
   
   .section-container {
@@ -335,15 +367,17 @@ const handleArtistClick = (artist) => {
   }
   
   .artists-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     max-width: 100%;
+    justify-items: center;
+    align-items: center;
   }
 
   .artist-card {
-    max-width: 100%;
+    max-width: 280px;
     aspect-ratio: 0.85;
-    margin: 0 auto;
+    margin: 0;
     border: 3px solid #000000;
     background: #000000;
   }
@@ -355,6 +389,47 @@ const handleArtistClick = (artist) => {
   
   .artist-overlay {
     padding: 15px;
+  }
+  
+  .artist-overlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  
+  .artist-overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .artists-section {
+    padding-top: 90px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-container {
+    padding: 0 15px;
+  }
+  
+  .artists-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .artist-card {
+    max-width: 100%;
+    aspect-ratio: 0.8;
+    margin: 0 auto;
+    border: 3px solid #000000;
+    background: #000000;
   }
   
   .artist-overlay h3 {
@@ -462,14 +537,18 @@ const handleArtistClick = (artist) => {
   }
 }
 
+/* Small mobile devices */
 @media (max-width: 480px) {
   .artists-section {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
   }
   
   .section-container {
-    padding: 0 15px;
+    padding: 0 12px;
   }
   
   .artists-grid {
@@ -477,22 +556,28 @@ const handleArtistClick = (artist) => {
   }
   
   .artist-card {
-    aspect-ratio: 0.8;
-    border: 4px solid #000000;
+    aspect-ratio: 0.75;
+    border: 3px solid #000000;
     background: #000000;
+    min-height: 260px;
   }
   
   .artist-overlay {
-    padding: 10px;
+    padding: 12px;
   }
   
   .artist-overlay h3 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
   }
   
   .artist-overlay p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .click-indicator {
+    font-size: 0.75rem;
+    margin-top: 8px;
   }
   
   /* Featured sections - smaller mobile */
@@ -594,10 +679,21 @@ const handleArtistClick = (artist) => {
 
 /* Additional mobile-specific improvements */
 @media (max-width: 768px) {
+  .artists-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
   .artist-card {
     /* Improve tap target size */
     min-height: 280px;
     background: #000000;
+    transition: all 0.3s ease;
+  }
+  
+  .artist-card:active {
+    transform: scale(0.98);
   }
   
   .artist-overlay {
@@ -621,6 +717,7 @@ const handleArtistClick = (artist) => {
     font-size: 0.75rem;
     font-weight: 600;
     margin-top: 10px;
+    transition: all 0.2s ease;
   }
   
   /* Hide all featured artist images on mobile */

@@ -45,7 +45,7 @@
   letter-spacing: -1px;
   color: var(--black);
   border-bottom: 5px solid #000000;
-  display: inline-block;
+    display: inline-block;
 }
 
 /* Team Section */
@@ -92,17 +92,15 @@
 
 .team-image {
   position: relative;
-  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
   width: 100%;
   max-width: 600px;
+  border: 5px solid #000000;
 }
 
 .team-image:hover {
   transform: translateY(-10px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
 }
 
 .team-photo {
