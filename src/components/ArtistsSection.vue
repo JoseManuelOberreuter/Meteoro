@@ -730,7 +730,6 @@ const handleArtistClick = (artist) => {
   margin-bottom: 30px;
   letter-spacing: -1px;
   border-bottom: 4px solid #000000;
-  padding-bottom: 15px;
   display: inline-block;
 }
 

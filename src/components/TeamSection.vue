@@ -45,7 +45,6 @@
   letter-spacing: -1px;
   color: var(--black);
   border-bottom: 5px solid #000000;
-  padding-bottom: 10px;
   display: inline-block;
 }
 
@@ -59,7 +58,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: start;
 }
 
 .team-text {
@@ -72,7 +71,6 @@
   margin-bottom: 40px;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   border-bottom: 5px solid #000000;
-  padding-bottom: 10px;
   display: inline-block;
 }
 
@@ -87,7 +85,7 @@
 .team-visual {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
 }

@@ -42,7 +42,7 @@ import { sessions } from '@/data/sessions.js'
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 900;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   letter-spacing: -1px;
   color: var(--black);
   border-bottom: 5px solid #000000;
