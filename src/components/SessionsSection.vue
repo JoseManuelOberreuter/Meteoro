@@ -55,7 +55,7 @@ import { sessions } from '@/data/sessions.js'
 
 /* Sessions Section */
 .sessions-section {
-  padding: 120px 0;
+  padding: 120px 0 0 0;
   background: #F5F5F0;
 }
 
@@ -74,7 +74,7 @@ import { sessions } from '@/data/sessions.js'
 
 .session-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 30px 80px rgba(249, 255, 69, 0.2);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
 }
 
 .session-video {

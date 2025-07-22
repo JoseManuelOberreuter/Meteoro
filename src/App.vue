@@ -3,10 +3,8 @@
     <!-- Navigation -->
     <NavBar :scrollTo="scrollTo" />
 
+    <!-- Artists Grid Section -->
     <ArtistsGrid />
-
-    <!-- Artists Section -->
-    <ArtistsSection />
 
     <!-- Team Section -->
     <TeamSection />
@@ -14,7 +12,8 @@
     <!-- Sessions Section -->
     <SessionsSection />
 
-
+    <!-- Artists Section -->
+    <ArtistsSection />
 
     <!-- Store Section -->
     <StoreSection />
