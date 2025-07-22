@@ -50,7 +50,7 @@
         </div>
       </div>
       
-      <p>&copy; 2024 SELLO METEORO.</p>
+      <p>&copy; 2025 SELLO METEORO.</p>
     </div>
   </footer>
 </template>
@@ -94,19 +94,20 @@ const scrollToTop = () => {
 .footer-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap: 60px;
   margin-bottom: 40px;
 }
 
 .footer-logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   cursor: pointer;
+  margin-bottom: -10px;
 }
 
 .footer-logo-image {
-  height: 9rem;
+  height: 7rem;
   width: auto;
   transition: all 0.3s ease;
   filter: brightness(0) invert(1);
@@ -262,10 +263,12 @@ const scrollToTop = () => {
     gap: 35px;
     text-align: center;
     margin-bottom: 30px;
+    align-items: center;
   }
   
   .footer-logo {
     justify-content: center;
+    align-items: center;
     margin-bottom: 0;
   }
 
@@ -344,6 +347,16 @@ const scrollToTop = () => {
   .footer-main {
     gap: 25px;
     margin-bottom: 25px;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-social {
+    justify-content: center;
   }
   
   .footer-logo-image {
@@ -408,6 +421,16 @@ const scrollToTop = () => {
   .footer-main {
     gap: 20px;
     margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-social {
+    justify-content: center;
   }
   
   .footer-logo-image {
