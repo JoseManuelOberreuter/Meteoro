@@ -38,9 +38,8 @@
 
 /* Store Section */
 .store-section {
-  padding: 80px 0;
+  padding: 80px 0 200px 0 ;
   background: #F5F5F0;
-  margin-bottom: 80px;
 }
 
 .coming-soon-content {
