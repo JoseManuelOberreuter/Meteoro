@@ -441,6 +441,7 @@ const handleArtistClick = (artist) => {
     flex-direction: column;
     gap: 0;
     align-items: center;
+    width: 100%;
   }
 
   .featured-artist-container.reverse {
@@ -453,13 +454,14 @@ const handleArtistClick = (artist) => {
 
   .featured-artist-content {
     padding-top: 0;
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 100%;
+    padding: 0 20px;
   }
 
   .featured-artist-content.text-right {
-    text-align: left;
+    text-align: center;
   }
 
   .featured-artist-title {
@@ -470,6 +472,7 @@ const handleArtistClick = (artist) => {
     padding-bottom: 15px;
     border-bottom: 3px solid #000000;
     font-weight: 900;
+    width: 100%;
   }
 
   .featured-artist-description {
@@ -478,6 +481,8 @@ const handleArtistClick = (artist) => {
     margin-bottom: 20px;
     line-height: 1.6;
     color: #333333;
+    width: 100%;
+    max-width: 100%;
   }
   
   .featured-artist-content.text-right .featured-artist-description {
@@ -493,6 +498,7 @@ const handleArtistClick = (artist) => {
     gap: 15px;
     margin-top: 25px;
     flex-wrap: wrap;
+    width: 100%;
   }
   
   .featured-artist-content.text-right .social-links {
@@ -577,10 +583,21 @@ const handleArtistClick = (artist) => {
   
   .featured-artist-container {
     gap: 0;
+    width: 100%;
   }
   
   .featured-artist-image {
     display: none;
+  }
+  
+  .featured-artist-content {
+    padding: 0 15px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .featured-artist-content.text-right {
+    text-align: center;
   }
   
   .featured-artist-title {
@@ -590,6 +607,7 @@ const handleArtistClick = (artist) => {
     padding-bottom: 12px;
     border-bottom: 2px solid #000000;
     text-align: center !important;
+    width: 100%;
   }
   
   .featured-artist-description {
@@ -597,6 +615,8 @@ const handleArtistClick = (artist) => {
     margin-bottom: 18px;
     text-align: justify !important;
     line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
   }
   
   .featured-artist-content.text-right .featured-artist-description {
@@ -611,6 +631,7 @@ const handleArtistClick = (artist) => {
     gap: 10px;
     margin-top: 20px;
     justify-content: center !important;
+    width: 100%;
   }
   
   .social-link {
@@ -706,15 +727,23 @@ const handleArtistClick = (artist) => {
     display: none !important;
   }
   
-  /* Ensure text content takes full width */
+  /* Ensure text content takes full width and proper alignment */
   .featured-artist-content {
     width: 100% !important;
     max-width: 100% !important;
+    text-align: center !important;
+    padding: 0 20px !important;
+  }
+  
+  .featured-artist-content.text-right {
+    text-align: center !important;
   }
   
   /* Force all descriptions to be justified on mobile */
   .featured-artist-description {
     text-align: justify !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   .featured-artist-content.text-right .featured-artist-description {
@@ -724,6 +753,7 @@ const handleArtistClick = (artist) => {
   /* Force centering of titles and social links on mobile */
   .featured-artist-title {
     text-align: center !important;
+    width: 100% !important;
   }
   
   .featured-artist-content.text-right .featured-artist-title {
@@ -732,10 +762,16 @@ const handleArtistClick = (artist) => {
   
   .social-links {
     justify-content: center !important;
+    width: 100% !important;
   }
   
   .featured-artist-content.text-right .social-links {
     justify-content: center !important;
+  }
+  
+  /* Ensure containers take full width */
+  .featured-artist-container {
+    width: 100% !important;
   }
 }
 
