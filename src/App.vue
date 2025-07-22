@@ -3,14 +3,18 @@
     <!-- Navigation -->
     <NavBar :scrollTo="scrollTo" />
 
+    <ArtistsGrid />
+
     <!-- Artists Section -->
     <ArtistsSection />
+
+    <!-- Team Section -->
+    <TeamSection />
 
     <!-- Sessions Section -->
     <SessionsSection />
 
-    <!-- Team Section -->
-    <TeamSection />
+
 
     <!-- Store Section -->
     <StoreSection />
@@ -28,6 +32,7 @@ import SessionsSection from './components/SessionsSection.vue'
 import TeamSection from './components/TeamSection.vue'
 import StoreSection from './components/StoreSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import ArtistsGrid from './components/ArtistsGrid.vue'
 
 // Methods
 const scrollTo = (elementId) => {

@@ -1,24 +1,6 @@
 <template>
   <section id="artistas" class="artists-section">
     <div class="section-container">
-      <h2 class="section-title">NUESTROS ARTISTAS</h2>
-      <div class="artists-grid">
-        <div 
-          v-for="artist in artists" 
-          :key="artist.id" 
-          class="artist-card"
-          @mouseenter="playHoverSound"
-          @click="handleArtistClick(artist)"
-        >
-          <div class="artist-image" :style="{ backgroundImage: `url(${artist.image})` }">
-            <div class="artist-overlay">
-              <h3 :title="artist.name">{{ artist.name }}</h3>
-              <p>{{ artist.genre }}</p>
-              <div class="click-indicator">TAP PARA VER MÁS</div>
-            </div>
-          </div>
-        </div>
-      </div>
       
       <!-- Featured Artist Section -->
       <div id="featured-artist" class="featured-artist-section">
@@ -180,7 +162,6 @@ const handleArtistClick = (artist) => {
   padding-top: 120px;
   padding-bottom: 0;
   background: #F5F5F0;
-  margin-top: 60px;
   min-height: 100vh;
   display: flex;
   align-items: center;
