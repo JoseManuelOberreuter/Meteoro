@@ -6,7 +6,7 @@
       <div id="featured-artist" class="featured-artist-section">
         <div class="featured-artist-container">
           <div class="featured-artist-image">
-            <img :src="AlonsxTercerxImage" alt="ALONSX TERCERX" />
+            <video :src="AlonsxTercerxVideo" autoplay loop muted playsinline></video>
           </div>
           <div class="featured-artist-content text-right">
             <h2 class="featured-artist-title">ALONSX TERCERX</h2>
@@ -34,7 +34,7 @@
       <div id="featured-neon-rebels" class="featured-artist-section">
         <div class="featured-artist-container reverse">
           <div class="featured-artist-image">
-            <img :src="AlonsxTercerxImage" alt="DONATO SOTO" />
+            <video :src="DonatoSotoVideo" autoplay loop muted playsinline></video>
           </div>
           <div class="featured-artist-content">
             <h2 class="featured-artist-title">DONATO SOTO</h2>
@@ -63,12 +63,12 @@
       <div id="featured-aurora-beats" class="featured-artist-section">
         <div class="featured-artist-container">
           <div class="featured-artist-image">
-            <img :src="AlonsxTercerxImage" alt="JOSEIKNACIO" />
+            <video :src="JoseiKacioVideo" autoplay loop muted playsinline></video>
           </div>
           <div class="featured-artist-content text-right">
-            <h2 class="featured-artist-title">JOSEIKNACIO</h2>
+            <h2 class="featured-artist-title">JOSEI KNACIO</h2>
             <p class="featured-artist-description">
-              JOSEIKNACIO es un proyecto que nace desde la estética 
+              JOSEI KNACIO es un proyecto que nace desde la estética 
               indie pop con premisas lo-fi, para adentrarse en sonidos 
               de alta delicadeza y melancolía lírica, pero al mismo 
               tiempo envolventes y cálidos; elementos que se plasman 
@@ -94,7 +94,9 @@
 
 <script setup>
 import { artists } from '@/data/artists.js'
-import AlonsxTercerxImage from '@/assets/Alonsx_Tercerx_FOTO_V1.jpg'
+import AlonsxTercerxVideo from '@/assets/ALONSXTERCERX_CLIP_WEB.mp4'
+import DonatoSotoVideo from '@/assets/DONATO_SOTO_CLIP_WEB.mp4'
+import JoseiKacioVideo from '@/assets/JOSEIKNACIO_CLIP_WEB.mp4'
 
 // Methods
 const playHoverSound = () => {
@@ -112,7 +114,7 @@ const handleArtistClick = (artist) => {
     case 'DONATO SOTO':
       targetSectionId = 'featured-neon-rebels';
       break;
-    case 'JOSEIKNACIO':
+    case 'JOSEI KNACIO':
       targetSectionId = 'featured-aurora-beats';
       break;
     default:
@@ -814,10 +816,11 @@ const handleArtistClick = (artist) => {
   background: #000000;
 }
 
-.featured-artist-image img {
+.featured-artist-image img,
+.featured-artist-image video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
