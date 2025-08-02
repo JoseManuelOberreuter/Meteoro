@@ -810,17 +810,20 @@ const handleArtistClick = (artist) => {
 
 .featured-artist-image {
   flex: 0 0 350px;
-  aspect-ratio: 0.8;
   overflow: hidden;
-  border: 4px solid #000000;
+  border: 2px solid #000000;
   background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .featured-artist-image img,
 .featured-artist-image video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   object-position: center;
 }
 
