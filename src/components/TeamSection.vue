@@ -5,13 +5,16 @@
         <div class="team-text">
           <h2 class="section-title">SOBRE NOSOTRXS</h2>
           <p>
-            Somos una discográfica independiente fundada en Santiago de Chile.
+            Meteoro es un sello independiente chileno que impulsa proyectos musicales de forma integral, abarcando desde la puesta en escena y el sonido en vivo hasta la identidad visual y el desarrollo artístico.
           </p>
           <p>
-            Buscamos impulsar proyectos musicales de manera integral, abarcando puesta en escena, sonido, identidad visual y otros aspectos clave para su desarrollo dentro de la industria.
+            Nos enfocamos en la creación de contenido audiovisual y dirección de arte para construir identidades sólidas, conectar con audiencias y posicionar a lxs artistas en la industria.
           </p>
           <p>
-            El corazón de Meteoro está en la generación de material audiovisual y la dirección de arte de los proyectos. Creemos que una identidad visual sólida y coherente es clave para conectar con nuevas audiencias, consolidar la presencia de los artistas en la industria y hacerlos parte de escenarios relevantes.
+            Promovemos una creación colaborativa, distribución justa de beneficios y un acompañamiento estratégico constante.
+          </p>
+          <p>
+            Buscamos ser una plataforma creativa que reuna música, arte, gestión cultural y comunidad, con un compromiso firme hacia la cultura local y latinoamericana.
           </p>
         </div>
         <div class="team-visual">
@@ -88,6 +91,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
 }
 
 .team-image {
