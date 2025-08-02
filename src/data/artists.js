@@ -17,7 +17,7 @@ export const artists = [
   },
   { 
     id: 3, 
-    name: 'JOSEI KNACIO', 
+    name: 'JOSEIKNACIO', 
     genre: 'INDIE POP LO-FI',
     image: JoseiKacioImage
   }

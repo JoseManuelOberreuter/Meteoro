@@ -66,7 +66,7 @@
             <video :src="JoseiKacioVideo" autoplay loop muted playsinline></video>
           </div>
           <div class="featured-artist-content text-right">
-            <h2 class="featured-artist-title">JOSEI KNACIO</h2>
+            <h2 class="featured-artist-title">JOSEIKNACIO</h2>
             <p class="featured-artist-description">
               JOSEI KNACIO es un proyecto que nace desde la estética 
               indie pop con premisas lo-fi, para adentrarse en sonidos 
