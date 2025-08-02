@@ -74,7 +74,6 @@ import { sessions } from '@/data/sessions.js'
 
 .session-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
 }
 
 .session-video {
