@@ -3,7 +3,7 @@
     <div class="section-container">
       <div class="team-content">
         <div class="team-text">
-          <h2 class="section-title">SOBRE NOSOTRXS</h2>
+          <h2 class="section-title">NOSOTRXS</h2>
           <p>
             Meteoro es un sello independiente chileno que impulsa proyectos musicales de forma integral, abarcando desde la puesta en escena y el sonido en vivo hasta la identidad visual y el desarrollo artístico.
           </p>
