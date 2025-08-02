@@ -67,6 +67,7 @@ const handleArtistClick = (artist) => {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 40px;
+  width: 100%;
 }
 
 /* Reset para cards */
@@ -93,6 +94,9 @@ const handleArtistClick = (artist) => {
   margin-top: 60px;
   padding: 120px 0;
   background: #F5F5F0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .artists-grid {
