@@ -202,17 +202,14 @@ const handleArtistClick = (artist) => {
 /* Artist-Specific Styling */
 .artist-card:hover .artist-overlay h3[title="ALONSX TERCERX"] {
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .artist-card:hover .artist-overlay h3[title="DONATO SOTO"] {
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .artist-card:hover .artist-overlay h3[title="JOSEIKNACIO"] {
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .click-indicator {
@@ -224,7 +221,6 @@ const handleArtistClick = (artist) => {
   text-align: center;
   transform: translateY(20px);
   transition: transform 0.3s ease 0.2s;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .artist-card:hover .click-indicator {
