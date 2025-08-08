@@ -68,7 +68,7 @@
           <div class="featured-artist-content text-right">
             <h2 class="featured-artist-title">JOSEIKNACIO</h2>
             <p class="featured-artist-description">
-              JOSEI KNACIO es un proyecto que nace desde la estética 
+              JOSEIKNACIO es un proyecto que nace desde la estética 
               indie pop con premisas lo-fi, para adentrarse en sonidos 
               de alta delicadeza y melancolía lírica, pero al mismo 
               tiempo envolventes y cálidos; elementos que se plasman 
@@ -114,7 +114,7 @@ const handleArtistClick = (artist) => {
     case 'DONATO SOTO':
       targetSectionId = 'featured-neon-rebels';
       break;
-    case 'JOSEI KNACIO':
+    case 'JOSEIKNACIO':
       targetSectionId = 'featured-aurora-beats';
       break;
     default:

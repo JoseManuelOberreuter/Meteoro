@@ -43,7 +43,7 @@ const handleArtistClick = (artist) => {
     case 'DONATO SOTO':
       targetSectionId = 'featured-neon-rebels';
       break;
-    case 'JOSEI KNACIO':
+    case 'JOSEIKNACIO':
       targetSectionId = 'featured-aurora-beats';
       break;
     default:
