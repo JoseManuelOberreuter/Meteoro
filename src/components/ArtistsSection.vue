@@ -22,9 +22,9 @@
               primer single de su EP debut "TRES" (2025).
             </p>
             <div class="social-links">
-              <a href="#" class="social-link">MUSICA</a>
-              <a href="#" class="social-link">INSTAGRAM</a>
-              <a href="#" class="social-link">YOUTUBE</a>
+              <a href="https://offstep.link/782180063251" target="_blank" class="social-link">MUSICA</a>
+              <a href="https://www.instagram.com/alonsxtercerx?igsh=MXVrazQyc2pqbnRkNg%3D%3D" target="_blank" class="social-link">INSTAGRAM</a>
+              <a href="https://www.youtube.com/@alonsxtercerx" target="_blank" class="social-link">YOUTUBE</a>
             </div>
           </div>
         </div>
@@ -51,9 +51,9 @@
               producción.
             </p>
             <div class="social-links">
-              <a href="#" class="social-link">MUSICA</a>
-              <a href="#" class="social-link">INSTAGRAM</a>
-              <a href="#" class="social-link">YOUTUBE</a>
+              <a href="#" target="_blank" class="social-link">MUSICA</a>
+              <a href="https://www.instagram.com/donato_soto?igsh=MXU3bXF4aGRibjQycg==" target="_blank" class="social-link">INSTAGRAM</a>
+              <a href="#" target="_blank" class="social-link">YOUTUBE</a>
             </div>
           </div>
         </div>
@@ -80,14 +80,13 @@
               lanzamientos previstos para los próximos meses.
             </p>
             <div class="social-links">
-              <a href="#" class="social-link">MUSICA</a>
-              <a href="#" class="social-link">INSTAGRAM</a>
-              <a href="#" class="social-link">YOUTUBE</a>
+              <a href="#" target="_blank" class="social-link">MUSICA</a>
+              <a href="https://www.instagram.com/joseiknacio?igsh=MWt4aHViOTk4NGRldA==" target="_blank" class="social-link">INSTAGRAM</a>
+              <a href="#" target="_blank" class="social-link">YOUTUBE</a>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   </section>
 </template>
