@@ -115,7 +115,6 @@ const scrollToTop = () => {
 
 .footer-logo-image:hover {
   transform: scale(1.1);
-  filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
 .footer-newsletter {
