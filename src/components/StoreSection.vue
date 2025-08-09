@@ -4,7 +4,7 @@
       <div class="coming-soon-content">
         <h2 class="section-title">TIENDA METEORO</h2>
         <div class="coming-soon-box">
-          <div class="construction-icon">🚧</div>
+          <div class="construction-icon">👩🏻‍💻🧑🏻‍💻</div>
           <h3>PRÓXIMAMENTE</h3>
           <p>Estamos preparando algo especial para ti.<br>Merchandising exclusivo y ediciones limitadas.</p>
         </div>
@@ -57,7 +57,6 @@
   padding: 40px 30px;
   max-width: 500px;
   margin: 40px auto 0 auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
