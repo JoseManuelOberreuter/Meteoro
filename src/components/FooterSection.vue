@@ -20,10 +20,26 @@
               placeholder="Tu correo electrónico" 
               class="newsletter-input" 
               v-model="email"
+              :disabled="isLoading"
               required
             >
-            <button type="submit" class="newsletter-button">SUSCRIBIRSE</button>
+            <button 
+              type="submit" 
+              class="newsletter-button"
+              :disabled="isLoading || !email"
+            >
+              {{ isLoading ? 'ENVIANDO...' : 'SUSCRIBIRSE' }}
+            </button>
           </form>
+          
+          <!-- Feedback Message -->
+          <div 
+            v-if="message" 
+            class="newsletter-message"
+            :class="{ 'success': messageType === 'success', 'error': messageType === 'error' }"
+          >
+            {{ message }}
+          </div>
         </div>
         
         <div class="footer-social">
@@ -57,16 +73,61 @@
 
 <script setup>
 import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
 
 // Reactive data
 const email = ref('')
+const isLoading = ref(false)
+const message = ref('')
+const messageType = ref('') // 'success' or 'error'
+
+// EmailJS Configuration from environment variables
+const EMAIL_SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID
+const EMAIL_TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID
+const EMAIL_PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY
 
 // Methods
-const handleSubmit = () => {
-  // Handle newsletter subscription
-  console.log('Newsletter subscription:', email.value)
-  // Reset form
-  email.value = ''
+const handleSubmit = async () => {
+  if (!email.value) return
+  
+  isLoading.value = true
+  message.value = ''
+  
+  try {
+    // Template parameters that will be sent to EmailJS
+    const templateParams = {
+      email: email.value,
+      to_name: 'METEORO Team', // You can customize this
+      from_name: 'Suscriptor Newsletter', // You can customize this
+      message: `Nueva suscripción al newsletter de ${email.value}`
+    }
+    
+    // Send email using EmailJS
+    const result = await emailjs.send(
+      EMAIL_SERVICE_ID,
+      EMAIL_TEMPLATE_ID,
+      templateParams,
+      EMAIL_PUBLIC_KEY
+    )
+    
+    console.log('Email sent successfully:', result)
+    message.value = '¡Gracias por suscribirte! Pronto recibirás nuestras novedades.'
+    messageType.value = 'success'
+    email.value = '' // Reset form
+    
+  } catch (error) {
+    console.error('Error sending email:', error)
+    message.value = 'Hubo un error al procesar tu suscripción. Por favor, inténtalo de nuevo.'
+    messageType.value = 'error'
+  } finally {
+    isLoading.value = false
+    
+    // Clear message after 5 seconds
+    setTimeout(() => {
+      message.value = ''
+      messageType.value = ''
+    }, 5000)
+  }
 }
 
 const scrollToTop = () => {
@@ -178,9 +239,53 @@ const scrollToTop = () => {
   white-space: nowrap;
 }
 
-.newsletter-button:hover {
+.newsletter-button:hover:not(:disabled) {
   background: var(--white);
   transform: translateY(-2px);
+}
+
+.newsletter-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.newsletter-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.newsletter-message {
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.newsletter-message.success {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.newsletter-message.error {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer-social {
@@ -312,6 +417,12 @@ const scrollToTop = () => {
     font-weight: 800;
   }
   
+  .newsletter-message {
+    margin-top: 12px;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  
   .footer-social {
     justify-content: center;
     gap: 18px;
@@ -387,6 +498,12 @@ const scrollToTop = () => {
     font-size: 0.8rem;
   }
   
+  .newsletter-message {
+    margin-top: 10px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
   .footer-social {
     gap: 15px;
   }
@@ -452,6 +569,12 @@ const scrollToTop = () => {
   
   .newsletter-button {
     padding: 9px 18px;
+    font-size: 0.75rem;
+  }
+  
+  .newsletter-message {
+    margin-top: 8px;
+    padding: 8px 10px;
     font-size: 0.75rem;
   }
   
