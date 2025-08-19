@@ -122,7 +122,7 @@ const handleArtistClick = (artist) => {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background: #000000;
+  background: transparent;
 }
 
 /* Posicionamiento específico de cada tarjeta */
@@ -154,7 +154,7 @@ const handleArtistClick = (artist) => {
 .artist-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
   object-position: center;
   display: block;
 }
@@ -289,7 +289,7 @@ const handleArtistClick = (artist) => {
     aspect-ratio: 0.85;
     margin: 0;
     border: 3px solid #000000;
-    background: #000000;
+    background: transparent;
   }
   
   .artist-card:hover {
@@ -339,7 +339,7 @@ const handleArtistClick = (artist) => {
     aspect-ratio: 0.8;
     margin: 0 auto;
     border: 3px solid #000000;
-    background: #000000;
+    background: transparent;
   }
   
   .artist-overlay h3 {
@@ -378,7 +378,7 @@ const handleArtistClick = (artist) => {
   .artist-card {
     aspect-ratio: 0.75;
     border: 3px solid #000000;
-    background: #000000;
+    background: transparent;
     min-height: 260px;
   }
   
@@ -447,7 +447,7 @@ const handleArtistClick = (artist) => {
   .artist-card {
     /* Improve tap target size */
     min-height: 280px;
-    background: #000000;
+    background: transparent;
     transition: all 0.3s ease;
   }
   
