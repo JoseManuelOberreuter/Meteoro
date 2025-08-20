@@ -131,7 +131,7 @@ onUnmounted(() => {
 }
 
 .nav-scrolled {
-  background: rgba(245, 245, 240, 0.95);
+  background: rgba(245, 245, 240);
   backdrop-filter: blur(10px);
   padding: 8px 0;
   border-bottom: 4px solid #000000;
