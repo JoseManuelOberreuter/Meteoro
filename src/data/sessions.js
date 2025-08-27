@@ -1,6 +1,6 @@
-import still1 from '@/assets/Still 2025-04-14 191143_1.2.1.jpg'
-import still2 from '@/assets/Still 2025-04-14 191143_1.3.2.jpg'
-import still3 from '@/assets/Still 2025-04-14 191143_2.1.2.jpg'
+import lanzamiento1 from '@/assets/lanzamiento-1.jpg'
+import lanzamiento2 from '@/assets/lanzamiento-2.jpg'
+import lanzamiento3 from '@/assets/lanzamiento-3.jpg'
 
 export const sessions = [
   { 
@@ -8,20 +8,27 @@ export const sessions = [
     title: 'LIVE SESSION #01', 
     artist: 'LUNA ECLIPSE', 
     date: '2024',
-    image: still1
+    image: lanzamiento1,
+    link: 'https://example.com/lanzamiento-1',
+    buttonText: 'REPRODUCIR'
   },
   { 
     id: 2, 
     title: 'ACOUSTIC SERIES', 
     artist: 'CYBER FOLK', 
     date: '2024',
-    image: still2
+    wide: true,
+    image: lanzamiento2,
+    link: 'https://example.com/lanzamiento-2',
+    buttonText: 'VER'
   },
   { 
     id: 3, 
     title: 'UNDERGROUND VIBES', 
     artist: 'DARK MATTER', 
     date: '2024',
-    image: still3
+    image: lanzamiento3,
+    link: 'https://example.com/lanzamiento-3',
+    buttonText: 'REPRODUCIR'
   }
 ] 

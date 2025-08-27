@@ -780,7 +780,6 @@ const handleArtistClick = (artist) => {
 .featured-artist-section {
   margin-top: 80px;
   padding: 150px 0;
-  border-bottom: 1px solid #e0e0e0;
   min-height: 100vh;
   display: flex;
   align-items: center;

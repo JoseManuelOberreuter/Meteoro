@@ -19,9 +19,9 @@
         </div>
         <div class="team-visual">
           <div class="team-image">
-            <img src="@/assets/SELLO METEORO 5_1.jpg" alt="Nuestro Equipo METEORO" class="team-photo">
+            <img src="@/assets/Logo bonus-61.png" alt="Nuestro Equipo METEORO" class="team-photo">
           </div>
-          <p class="team-description">Equipo meteoro; de izquierda a derecha Dani, Stefa y Jaque</p>
+          <!-- <p class="team-description">Equipo meteoro; de izquierda a derecha Dani, Stefa y Jaque</p> -->
         </div>
       </div>
     </div>
@@ -100,7 +100,6 @@
   transition: all 0.4s ease;
   width: 100%;
   max-width: 600px;
-  border: 5px solid #000000;
 }
 
 .team-image:hover {
